@@ -10,16 +10,17 @@
             padding: 0;
             margin: 0;
         }
-        body {
-            align-self: center;
-        }
 
         h1 {
+            display: flex;
+            justify-content: center;
             color: yellowgreen;
+            margin-top: 3em;
         }
 
         .div1 {
             display: flex;
+            justify-content: center;
             padding: 2rem;
             margin: 1rem;
         }
@@ -40,10 +41,30 @@
             width: 50em;
             padding-top: 3rem
         }
+
+        @media (max-width: 768px) {
+            img {
+                width: 15rem;
+                border: 3px solid;
+                border-radius: 10%;
+                margin-left: 4rem;
+                margin-right: 4rem;
+                box-shadow: -20px -50px 2.8px teal;
+            }
+
+            .div1 {
+                display: block;
+                margin: 1rem;
+            }
+
+            .divw {
+                width: 24rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Junior Dveloper</h1>
+    <h1>Junior Developer</h1>
     <div class="div1">
         <img src="https://my-web-production-xi.vercel.app/image/perfil2.jpg" alt="Alexi Duran"/>
         <div class="divw">
